@@ -3,6 +3,7 @@ package com.vividsolutions.jts.io;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
+import java.io.Serializable;
 
 /**
  * GWT compatible StreamTokenizer replacement for {@link WKTReader}.
@@ -12,7 +13,7 @@ import java.io.StringReader;
  * @see java.io.StreamTokenizer
  * @author Grzegorz Nowak
  */
-public class WKTTokenizer {
+public class WKTTokenizer implements Serializable {
 
 	public int ttype = TT_NOTHING;
 
