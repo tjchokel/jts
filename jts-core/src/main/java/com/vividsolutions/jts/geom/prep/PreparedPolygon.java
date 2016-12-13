@@ -37,6 +37,7 @@ import com.vividsolutions.jts.algorithm.locate.*;
 import com.vividsolutions.jts.geom.*;
 import com.vividsolutions.jts.noding.*;
 import com.vividsolutions.jts.operation.predicate.*;
+import java.io.Serializable;
 
 /**
  * A prepared version for {@link Polygonal} geometries.
@@ -52,6 +53,7 @@ import com.vividsolutions.jts.operation.predicate.*;
  */
 public class PreparedPolygon
   extends BasicPreparedGeometry
+  implements Serializable
 {
 	private final boolean isRectangle;
 	// create these lazily, since they are expensive
