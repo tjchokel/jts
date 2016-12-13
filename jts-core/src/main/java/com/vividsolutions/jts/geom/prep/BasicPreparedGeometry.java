@@ -34,6 +34,7 @@ package com.vividsolutions.jts.geom.prep;
 
 import java.util.Iterator;
 import java.util.List;
+import java.io.Serializable;
 
 import com.vividsolutions.jts.algorithm.locate.*;
 import com.vividsolutions.jts.algorithm.*;
@@ -51,7 +52,7 @@ import com.vividsolutions.jts.geom.util.ComponentCoordinateExtracter;
  *
  */
 class BasicPreparedGeometry 
-  implements PreparedGeometry
+  implements PreparedGeometry, Serializable
 {
   private final Geometry baseGeom;
   private final List representativePts;  // List<Coordinate>

@@ -33,6 +33,7 @@
 package com.vividsolutions.jts.geom.prep;
 
 import com.vividsolutions.jts.geom.*;
+import java.io.Serializable;
 
 /**
  * A factory for creating {@link PreparedGeometry}s.
@@ -46,7 +47,7 @@ import com.vividsolutions.jts.geom.*;
  * @author Martin Davis
  *
  */
-public class PreparedGeometryFactory 
+public class PreparedGeometryFactory implements Serializable
 {
   /**
    * Creates a new {@link PreparedGeometry} appropriate for the argument {@link Geometry}.

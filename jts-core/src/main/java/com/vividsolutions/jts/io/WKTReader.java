@@ -40,6 +40,7 @@ import java.io.IOException;
 import java.io.Reader;
 import java.io.StreamTokenizer;
 import java.io.StringReader;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -128,7 +129,7 @@ import java.util.List;
  * @version 1.7
  * @see WKTWriter
  */
-public class WKTReader
+public class WKTReader implements Serializable
 {
   private static final String EMPTY = "EMPTY";
   private static final String COMMA = ",";

@@ -33,6 +33,7 @@
 package com.vividsolutions.jts.geom.prep;
 
 import com.vividsolutions.jts.geom.*;
+import java.io.Serializable;
 
 /**
  * An interface for classes which prepare {@link Geometry}s 
@@ -54,7 +55,7 @@ import com.vividsolutions.jts.geom.*;
  * @author Martin Davis
  *
  */
-public interface PreparedGeometry 
+public interface PreparedGeometry implements Serializable
 {
 	
 	/**
