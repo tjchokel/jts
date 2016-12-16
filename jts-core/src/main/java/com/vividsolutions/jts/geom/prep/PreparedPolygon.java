@@ -59,6 +59,7 @@ public class PreparedPolygon
 	// create these lazily, since they are expensive
 	private FastSegmentSetIntersectionFinder segIntFinder = null;
 	private PointOnGeometryLocator pia = null;
+  private static final long serialVersionUID = 42L;
 
   public PreparedPolygon(Polygonal poly) {
     super((Geometry) poly);

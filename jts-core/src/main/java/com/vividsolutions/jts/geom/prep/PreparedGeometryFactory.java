@@ -49,6 +49,7 @@ import java.io.Serializable;
  */
 public class PreparedGeometryFactory implements Serializable
 {
+  private static final long serialVersionUID = 42L;
   /**
    * Creates a new {@link PreparedGeometry} appropriate for the argument {@link Geometry}.
    * 

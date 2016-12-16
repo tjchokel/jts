@@ -37,6 +37,7 @@ public class WKTTokenizer implements Serializable {
 
 	protected int mCurrChar = '\0';
 	protected int mPrevChar = '\0';
+	private static final long serialVersionUID = 42L;
 
 	public WKTTokenizer(Reader reader) {
 		mReader = reader;

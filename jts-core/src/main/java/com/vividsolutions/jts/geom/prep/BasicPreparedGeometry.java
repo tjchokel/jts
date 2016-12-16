@@ -56,6 +56,7 @@ class BasicPreparedGeometry
 {
   private final Geometry baseGeom;
   private final List representativePts;  // List<Coordinate>
+  private static final long serialVersionUID = 42L;
 
   public BasicPreparedGeometry(Geometry geom) 
   {
