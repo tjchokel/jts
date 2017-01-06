@@ -32,6 +32,7 @@
  */
 package com.vividsolutions.jts.algorithm.locate;
 
+import java.io.Serializable;
 import java.util.*;
 
 import com.vividsolutions.jts.algorithm.RayCrossingCounter;
@@ -106,7 +107,7 @@ public class IndexedPointInAreaLocator
     }
   }
   
-  private static class IntervalIndexedGeometry
+  private static class IntervalIndexedGeometry implements Serializable
   {
     private final SortedPackedIntervalRTree index= new SortedPackedIntervalRTree();
 

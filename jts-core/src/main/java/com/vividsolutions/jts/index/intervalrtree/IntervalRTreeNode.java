@@ -32,13 +32,14 @@
  */
 package com.vividsolutions.jts.index.intervalrtree;
 
+import java.io.Serializable;
 import java.util.Comparator;
 
 import com.vividsolutions.jts.geom.*;
 import com.vividsolutions.jts.io.*;
 import com.vividsolutions.jts.index.*;
 
-public abstract class IntervalRTreeNode 
+public abstract class IntervalRTreeNode implements Serializable
 {
 	protected double min = Double.POSITIVE_INFINITY;
 	protected double max = Double.NEGATIVE_INFINITY;
@@ -61,7 +62,7 @@ public abstract class IntervalRTreeNode
 		return WKTWriter.toLineString(new Coordinate(min, 0), new Coordinate(max, 0));
 	}
   
-  public static class NodeComparator implements Comparator
+  public static class NodeComparator implements Comparator, Serializable
   {
     public int compare(Object o1, Object o2)
     {
