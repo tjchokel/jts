@@ -32,6 +32,7 @@
  */
 package com.vividsolutions.jts.index.intervalrtree;
 
+import java.io.Serializable;
 import java.util.*;
 
 import com.vividsolutions.jts.geom.Coordinate;
@@ -53,7 +54,7 @@ import com.vividsolutions.jts.io.WKTWriter;
  * 
  * @author Martin Davis
  */
-public class SortedPackedIntervalRTree 
+public class SortedPackedIntervalRTree  implements Serializable
 {
   private List leaves = new ArrayList();
 	private IntervalRTreeNode root = null;
