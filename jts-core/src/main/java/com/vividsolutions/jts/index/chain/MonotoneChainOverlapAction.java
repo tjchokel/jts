@@ -36,13 +36,15 @@ package com.vividsolutions.jts.index.chain;
 
 import com.vividsolutions.jts.geom.*;
 
+import java.io.Serializable;
+
 /**
  * The action for the internal iterator for performing
  * overlap queries on a MonotoneChain
  *
  * @version 1.7
  */
-public class MonotoneChainOverlapAction
+public class MonotoneChainOverlapAction implements Serializable
 {
   // these envelopes are used during the MonotoneChain search process
   Envelope tempEnv1 = new Envelope();

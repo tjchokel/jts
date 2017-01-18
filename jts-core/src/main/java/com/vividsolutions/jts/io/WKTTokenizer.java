@@ -33,7 +33,7 @@ public class WKTTokenizer implements Serializable {
 
 	private boolean mPushBack;
 
-	private Reader mReader;
+	private transient Reader mReader;
 
 	protected int mCurrChar = '\0';
 	protected int mPrevChar = '\0';

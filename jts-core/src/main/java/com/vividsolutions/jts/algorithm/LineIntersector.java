@@ -39,6 +39,8 @@ import com.vividsolutions.jts.geom.*;
 import com.vividsolutions.jts.util.*;
 import com.vividsolutions.jts.io.WKTWriter;
 
+import java.io.Serializable;
+
 /**
  * A <code>LineIntersector</code> is an algorithm that can both test whether
  * two line segments intersect and compute the intersection point(s)
@@ -67,7 +69,7 @@ import com.vividsolutions.jts.io.WKTWriter;
  *
  * @version 1.7
  */
-public abstract class LineIntersector 
+public abstract class LineIntersector implements Serializable
 {
 /**
  * These are deprecated, due to ambiguous naming

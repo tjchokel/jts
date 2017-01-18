@@ -36,6 +36,8 @@ package com.vividsolutions.jts.index.chain;
 
 import com.vividsolutions.jts.geom.*;
 
+import java.io.Serializable;
+
 
 /**
  * Monotone Chains are a way of partitioning the segments of a linestring to
@@ -79,7 +81,7 @@ import com.vividsolutions.jts.geom.*;
  *
  * @version 1.7
  */
-public class MonotoneChain {
+public class MonotoneChain implements Serializable {
 
   private Coordinate[] pts;
   private int start, end;
