@@ -54,7 +54,7 @@ import com.vividsolutions.jts.io.WKTWriter;
  * 
  * @author Martin Davis
  */
-public class SortedPackedIntervalRTree  implements Serializable
+public class SortedPackedIntervalRTree implements Serializable
 {
   private List leaves = new ArrayList();
 	private IntervalRTreeNode root = null;

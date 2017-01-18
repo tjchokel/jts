@@ -34,6 +34,7 @@ package com.vividsolutions.jts.algorithm;
 import com.vividsolutions.jts.geom.*;
 import com.vividsolutions.jts.util.Assert;
 
+import java.io.Serializable;
 import java.util.*;
 import com.vividsolutions.jts.util.UniqueCoordinateArrayFilter;
 
@@ -439,7 +440,7 @@ public class ConvexHull
    * @version 1.7
    */
   private static class RadialComparator
-      implements Comparator<Coordinate>
+      implements Comparator<Coordinate>, Serializable
   {
     private Coordinate origin;
 

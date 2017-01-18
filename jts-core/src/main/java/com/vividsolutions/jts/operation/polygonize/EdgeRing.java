@@ -35,6 +35,7 @@
 
 package com.vividsolutions.jts.operation.polygonize;
 
+import java.io.Serializable;
 import java.util.*;
 
 import com.vividsolutions.jts.algorithm.*;
@@ -464,7 +465,7 @@ class EdgeRing {
    * @author mbdavis
    *
    */
-  static class EnvelopeComparator implements Comparator {
+  static class EnvelopeComparator implements Comparator, Serializable {
     public int compare(Object obj0, Object obj1) {
       EdgeRing r0 = (EdgeRing) obj0;
       EdgeRing r1 = (EdgeRing) obj1;

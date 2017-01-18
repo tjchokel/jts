@@ -33,6 +33,7 @@
 
 package com.vividsolutions.jts.noding;
 
+import java.io.Serializable;
 import java.util.*;
 
 /**
@@ -45,7 +46,7 @@ import java.util.*;
  *
  * @version 1.7
  */
-public class FastSegmentSetIntersectionFinder 
+public class FastSegmentSetIntersectionFinder implements Serializable
 {
 	private final SegmentSetMutualIntersector segSetMutInt; 
 	// for testing purposes

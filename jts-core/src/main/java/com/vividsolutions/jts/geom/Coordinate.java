@@ -409,7 +409,7 @@ public class Coordinate implements Comparable<Coordinate>, Cloneable, Serializab
    * Compares two {@link Coordinate}s, allowing for either a 2-dimensional
    * or 3-dimensional comparison, and handling NaN values correctly.
    */
-  public static class DimensionalComparator implements Comparator<Coordinate>
+  public static class DimensionalComparator implements Comparator<Coordinate>, Serializable
   {
     /**
      * Compare two <code>double</code>s, allowing for NaN values.

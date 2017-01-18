@@ -34,6 +34,8 @@ package com.vividsolutions.jts.algorithm;
 
 import com.vividsolutions.jts.geom.*;
 
+import java.io.Serializable;
+
 /**
  * Counts the number of segments crossed by a horizontal ray extending to the right
  * from a given point, in an incremental fashion.
@@ -60,7 +62,7 @@ import com.vividsolutions.jts.geom.*;
  * @author Martin Davis
  *
  */
-public class RayCrossingCounter 
+public class RayCrossingCounter implements Serializable
 {
 	/**
 	 * Determines the {@link Location} of a point in a ring.

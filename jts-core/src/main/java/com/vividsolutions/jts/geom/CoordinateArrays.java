@@ -34,6 +34,7 @@
  */
 package com.vividsolutions.jts.geom;
 
+import java.io.Serializable;
 import java.util.*;
 
 import com.vividsolutions.jts.math.MathUtil;
@@ -109,7 +110,7 @@ public class CoordinateArrays {
    * using lexicographic ordering.
    */
   public static class ForwardComparator
-      implements Comparator
+      implements Comparator, Serializable
   {
     public int compare(Object o1, Object o2) {
       Coordinate[] pts1 = (Coordinate[]) o1;
@@ -175,7 +176,7 @@ public class CoordinateArrays {
    *
    */
   public static class BidirectionalComparator
-      implements Comparator
+      implements Comparator, Serializable
   {
     public int compare(Object o1, Object o2) {
       Coordinate[] pts1 = (Coordinate[]) o1;

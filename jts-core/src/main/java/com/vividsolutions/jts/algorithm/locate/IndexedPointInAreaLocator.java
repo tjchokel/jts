@@ -91,7 +91,7 @@ public class IndexedPointInAreaLocator
   }
   
   private static class SegmentVisitor
-    implements ItemVisitor
+    implements ItemVisitor, Serializable
   {
     private RayCrossingCounter counter;
     
