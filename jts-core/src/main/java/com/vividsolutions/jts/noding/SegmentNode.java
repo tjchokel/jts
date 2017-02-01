@@ -33,6 +33,8 @@
 package com.vividsolutions.jts.noding;
 
 import java.io.PrintStream;
+import java.io.Serializable;
+
 import com.vividsolutions.jts.geom.Coordinate;
 
 /**
@@ -41,7 +43,7 @@ import com.vividsolutions.jts.geom.Coordinate;
  * @version 1.7
  */
 public class SegmentNode
-    implements Comparable
+    implements Comparable, Serializable
 {
   private final NodedSegmentString segString;
   public final Coordinate coord;   // the point of intersection

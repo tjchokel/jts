@@ -35,6 +35,8 @@ package com.vividsolutions.jts.noding;
 
 import com.vividsolutions.jts.geom.Coordinate;
 
+import java.io.Serializable;
+
 /**
  * An interface for classes which represent a sequence of contiguous line segments.
  * SegmentStrings can carry a context object, which is useful
@@ -42,8 +44,7 @@ import com.vividsolutions.jts.geom.Coordinate;
  *
  * @version 1.7
  */
-public interface SegmentString
-{
+public interface SegmentString extends Serializable {
   /**
    * Gets the user-defined data for this segment string.
    *
