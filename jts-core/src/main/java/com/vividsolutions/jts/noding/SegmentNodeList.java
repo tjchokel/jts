@@ -33,6 +33,7 @@
 package com.vividsolutions.jts.noding;
 
 import java.io.PrintStream;
+import java.io.Serializable;
 import java.util.*;
 import com.vividsolutions.jts.geom.*;
 import com.vividsolutions.jts.util.*;
@@ -42,7 +43,7 @@ import com.vividsolutions.jts.util.*;
  *
  * @version 1.7
  */
-public class SegmentNodeList
+public class SegmentNodeList implements Serializable
 {
   private Map nodeMap = new TreeMap();
   private NodedSegmentString edge;  // the parent edge
